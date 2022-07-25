@@ -1,0 +1,21 @@
+/* general settings */
+
+ul {
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+:hover {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
