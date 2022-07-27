@@ -95,11 +95,9 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
+    padding-right: 10px;
+    border-right: 1px solid var(--text-color-grey);
     margin-right: 10px;
-}
-
-.list-vertical-line {
-    color: var(--text-color-grey);
 }
 
 .mobile-nav__socials-link {
