@@ -45,6 +45,10 @@ address {
   font-style: normal;
 }
 
+ul {
+  margin: 0;
+}
+
 /* general settings */
 .container {
   width: 100%;
@@ -106,9 +110,13 @@ body {
   background-color: #fff;
   top: 0;
   left: 0;
-  width: 480px;
+  width: 100%;
   height: 100%;
   padding: 48px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  vertical-align: auto;
+  justify-content: space-between;
 }
 
 .is-open {
@@ -139,7 +147,7 @@ body {
 .mobile-nav__list {
   list-style: none;
   padding: 0;
-  margin-bottom: 300px;
+  margin: 0;
 }
 
 .mobile-nav__line {
@@ -164,6 +172,7 @@ body {
 
 .mobile-nav__contact-list {
   list-style: none;
+  margin: 0;
 }
 
 .mobile-nav__contact--tel {
@@ -181,6 +190,7 @@ body {
 .mobile-nav__socials-list {
   display: flex;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .mobile-nav__socials-line {
