@@ -2,12 +2,8 @@
 
 .footer {
     background-color: #2F303A;
-    padding: 60px 215px;   
-}
-
-.footer__container {
-    display: flex;
-    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;  
 }
 
 .logo--studio-white {
@@ -15,17 +11,17 @@
 }
 
 .address-wrap {
-    display: inline-block;
+    display: block;
+    text-align: center;
+    margin-bottom: 60px;
 }
 
 .address__list {
     padding: 0;
-    margin-top: 20px;
     text-decoration: none;
     color: #fff;
     list-style: none;
     font-style: normal;
-    margin-right: 70px;
 }
 
 .address__line {
@@ -48,13 +44,15 @@
 }
 
 .footer__media {
-    display: inline-block;
-    margin-right: 83px;
+    display: block;
+    text-align: center;
+    margin-bottom: 60px;
 }
 
 .footer__media__list {
     list-style: none;
     display: inline-block;
+    margin: 0;
 }
 
 .footer__social-icon {
@@ -74,17 +72,16 @@
     font-size: 14px;
     line-height: 16px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .footer__email-subscribe {
-    display: inline-block;
     padding: 0;
     margin: 0;
 }
 
 .email-subscribe__form {
-    display: inline-flex;
-    justify-content: space-between;
+    text-align: center;
 }
 
 .email-subscribe__title {
@@ -93,6 +90,7 @@
     font-size: 14px;
     line-height: 16px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .email-subscribe__input {
@@ -105,12 +103,13 @@
     font-size: 16px;
     line-height: 20px;
     margin-right: 10px;
-    width: 356px;
+    width: 100%;
     color: #FFFFFF;
+    margin-bottom: 20px;
 }
 
 .email-subscribe__button {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: space-between;
     background: var(--brand-color);
@@ -128,4 +127,54 @@
 
 .icon-send {
     margin-left: 10px;
+}
+
+@include mq(tab) {
+    .footer__container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .address-wrap {
+        margin-right: 165px;
+    }
+    .email-subscribe__form {
+        width: 450px;
+    }
+}
+
+@include mq(desk) {
+    .address-wrap {
+        display: inline-block;
+        text-align: left;
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+    .address__list {
+        margin-top: 20px;
+        margin-right: 70px;
+    }
+    .footer__media {
+        margin: 0;
+        margin-right: 93px;
+    }
+    .footer__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .email-subscribe__form {
+        display: inline-flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .email-subscribe__input {
+        width: 356px;
+        margin-bottom: 0;
+    }
+    .email-subscribe__title {
+        text-align: left;
+    }
+    .join-us-title {
+        text-align: left;
+    }
 }

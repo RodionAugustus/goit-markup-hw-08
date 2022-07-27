@@ -5,14 +5,16 @@
 
 .filters__list {
     display: flex;
-    justify-content: center;
     text-decoration: none;
     list-style: none;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
+    flex-wrap: wrap;
+    margin-top: 0;
 }
 
 .filters__item {
     display: inline-block;
+    margin-bottom: 15px;
 }
 
 .filter__button {
@@ -62,7 +64,7 @@
 .project__text {
     border: 1px solid #EEEEEE;
     padding: 19px 24px;
-    max-width: 370px;
+    max-width: 100%;
 }
 
 .project__title {
@@ -81,6 +83,10 @@
     line-height: 30px;
     margin-bottom: 0px;
     padding-bottom: 0px;
+}
+
+.project__image {
+    width: 450px;
 }
 
 .project__image-thumb {
@@ -108,4 +114,19 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
+}
+
+@include mq(tab) {
+    .filters__list {
+        justify-content: center;
+    }
+    .project__image {
+        width: 350px;
+    }
+}
+
+@include mq(desk) {
+    .project__image {
+        width: 370px;
+    }
 }

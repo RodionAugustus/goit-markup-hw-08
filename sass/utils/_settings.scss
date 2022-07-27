@@ -1,18 +1,42 @@
 /* general settings */
 
-ul {
-    padding: 0;
-}
+@import './mixin';
 
 .container {
-    width: 1200px;
+    width: 100%;
     margin: auto;
     padding: 0 15px;
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+@include mq(mob) {
+    .containter {
+        width: 480px;
+    }
+}
+
+@include mq(tab) {
+    .container {
+        width: 768px;
+    }
+}
+
+@include mq(desk) {
+    .container {
+        width: 1200px;
+    }
+    .section {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+ul {
+    padding: 0;
 }
 
 :hover {
