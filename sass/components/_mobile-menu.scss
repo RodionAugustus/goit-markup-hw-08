@@ -10,9 +10,7 @@
     height: 100%;
     padding: 48px 40px;
     display: flex;
-    flex-wrap: wrap;
-    vertical-align: auto;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 .is-open {
@@ -43,7 +41,7 @@
 .mobile-nav__list {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin-bottom: auto;
 }
 
 .mobile-nav__line {
@@ -60,6 +58,10 @@
     &:hover {
         color: var(--brand-color);
     }
+}
+
+.mobile-nav__link--is-current {
+    color: var(--brand-color);
 }
 
 .mobile-nav__page-link {
