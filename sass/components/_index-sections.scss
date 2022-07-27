@@ -31,7 +31,7 @@
         background-image: url("./../images/bg-image-md.jpg");
         background-size: 768px;   
         @include mq(retina) {
-            background-image: url("./../../images/bg-image_md@2x.jpg");
+            background-image: url("./../images/bg-image_md@2x.jpg");
         }
     }
     .offer__container {

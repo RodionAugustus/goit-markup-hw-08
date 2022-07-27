@@ -609,7 +609,7 @@ body {
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .offer {
-    background-image: url("./../../images/bg-image_md@2x.jpg");
+    background-image: url("./../images/bg-image_md@2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
