@@ -41,10 +41,10 @@
 
 @include mq(desk) {
     .offer {
-        background-image: url("./../../images/bg-image_lg.jpg");
+        background-image: url("./../images/bg-image_lg.jpg");
         background-size: 1600px auto;
         @include mq(retina) {
-            background-image: url("./../../images/bg-image_lg@2x.jpg");
+            background-image: url("./../images/bg-image_lg@2x.jpg");
         }
     }
     .offer__container {
