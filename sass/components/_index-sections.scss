@@ -1,37 +1,54 @@
 /* offer-section */
 
 .offer {
-    background-image: url("./../images/bg-image_sm.png");
+    background-image: url("./../images/bg-image_sm.jpg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    padding: 0;
     text-align: center;
     color: #fff;
     background-size: 480px;
-    padding-top: 118px;
-    padding-bottom: 118px;
     display: flex;
     justify-content: center;
+    @include mq(retina) {
+        background-image: url("./../images/bg-image_sm@2x.jpg");
+    }
+}
+
+.offer__container {
+    padding-top: 118px;
+    padding-bottom: 118px;
 }
 
 @include mq(mob) {
-    .offer {
+    .offer__container {
         padding: 118px auto;
     }
 }
 
 @include mq(tab) {
     .offer {
-        background-size: 768px;
+        background-image: url("./../images/bg-image-md.jpg");
+        background-size: 768px;   
+        @include mq(retina) {
+            background-image: url("./../../images/bg-image_md@2x.jpg");
+        }
+    }
+    .offer__container {
         padding: 118px 204px;
     }
-
 }
 
 @include mq(desk) {
     .offer {
-        background-image: url("./../images/bg-image_lg.png");
-        padding: 200px;
+        background-image: url("./../../images/bg-image_lg.jpg");
         background-size: 1600px auto;
+        @include mq(retina) {
+            background-image: url("./../../images/bg-image_lg@2x.jpg");
+        }
+    }
+    .offer__container {
+        padding: 200px;
     }
     .offer__text {
         width: 700px;
@@ -43,7 +60,6 @@
     .offer__order-button {
         padding: 10px 32px;
     }
-
 }
 
 .offer__text {

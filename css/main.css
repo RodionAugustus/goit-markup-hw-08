@@ -575,42 +575,76 @@ body {
 }
 /* offer-section */
 .offer {
-  background-image: url("./../images/bg-image_sm.png");
+  background-image: url("./../images/bg-image_sm.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  padding: 0;
   text-align: center;
   color: #fff;
   background-size: 480px;
-  padding-top: 118px;
-  padding-bottom: 118px;
   display: flex;
   justify-content: center;
 }
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .offer {
+    background-image: url("./../images/bg-image_sm@2x.jpg");
+  }
+}
+
+.offer__container {
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
 
 @media screen and (min-width: 480px) {
-  .offer {
+  .offer__container {
     padding: 118px auto;
   }
 }
 @media screen and (min-width: 768px) {
   .offer {
+    background-image: url("./../images/bg-image-md.jpg");
     background-size: 768px;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .offer {
+    background-image: url("./../../images/bg-image_md@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .offer__container {
     padding: 118px 204px;
   }
 }
 @media screen and (min-width: 1200px) {
   .offer {
-    background-image: url("./../images/bg-image_lg.png");
-    padding: 200px;
+    background-image: url("./../../images/bg-image_lg.jpg");
     background-size: 1600px auto;
   }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .offer {
+    background-image: url("./../../images/bg-image_lg@2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .offer__container {
+    padding: 200px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .offer__text {
     width: 700px;
   }
+}
+@media screen and (min-width: 1200px) {
   .main-title {
     font-size: 44px;
     line-height: 60px;
   }
+}
+@media screen and (min-width: 1200px) {
   .offer__order-button {
     padding: 10px 32px;
   }
